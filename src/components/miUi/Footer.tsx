@@ -62,7 +62,7 @@ function Footer() {
 			<div className="hidden w-full md:flex items-center justify-center py-4 px-2 bg-black">
 				<a href="">
 					<span className="text-gris-secundario text-xs text-center">
-						Feito com 🌊 e ☀️ em Itamambuca — Desenvolvido por Luana Andrada
+						Feito com 🌊 e ☀️ em Itamambuca — Desenvolvido por Ignacio Vivas
 					</span>
 				</a>
 			</div>
