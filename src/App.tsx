@@ -1,3 +1,4 @@
+import BackToTop from './components/miUi/BackToTop';
 import Footer from './components/miUi/Footer';
 import Header from './components/miUi/Header';
 import Banner from './components/sections/Banner';
@@ -28,6 +29,7 @@ function App() {
 			</div>
 			<Banner />
 			<Footer />
+			<BackToTop />
 		</div>
 	);
 }
