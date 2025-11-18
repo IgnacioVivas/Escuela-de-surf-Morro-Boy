@@ -1,7 +1,7 @@
 import BackToTop from './components/miUi/BackToTop';
 import Footer from './components/miUi/Footer';
 import Header from './components/miUi/Header';
-import WhatsAppButton from './components/miUi/WhatsappButton';
+import WhatssAppButton from './components/miUi/WhatssAppButton';
 import Banner from './components/sections/Banner';
 import Booking from './components/sections/Booking';
 import Experience from './components/sections/Experience';
@@ -30,8 +30,8 @@ function App() {
 			</div>
 			<Banner />
 			<Footer />
-			<WhatsAppButton />
 			<BackToTop />
+			<WhatssAppButton />
 		</div>
 	);
 }

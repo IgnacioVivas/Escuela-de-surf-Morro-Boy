@@ -1,9 +1,7 @@
-'use client';
-
 import { cn } from '@/lib/utils';
 import { useEffect, useState } from 'react';
 
-function WhatsAppButton() {
+function WhatssAppButton() {
 	const phone = '5493517713933';
 	const message = 'Olá! Gostaria de saber mais sobre as aulas de surf.';
 
@@ -44,4 +42,4 @@ function WhatsAppButton() {
 	);
 }
 
-export default WhatsAppButton;
+export default WhatssAppButton;
