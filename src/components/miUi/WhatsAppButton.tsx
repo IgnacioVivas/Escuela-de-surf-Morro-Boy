@@ -9,12 +9,11 @@ function WhatsAppButton() {
 
 	const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
-	// 👀 saber si el botón de “Voltar ao topo” está visible
 	const [isBackToTopVisible, setIsBackToTopVisible] = useState(false);
 
 	useEffect(() => {
 		const listener = (e: any) => {
-			setIsBackToTopVisible(e.detail); // true o false
+			setIsBackToTopVisible(e.detail);
 		};
 
 		window.addEventListener('backToTopVisibility', listener);
