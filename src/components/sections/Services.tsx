@@ -5,10 +5,10 @@ import fotos from '../../assets/fotos y videos.jpg';
 import yoga from '../../assets/supyoga1.jpg';
 
 const cards = [
-	{ img: clases, title: 'Aulas personalizadas de surf', price: '200$', extra: 'AULAS (1HS.)' },
-	{ img: alquiler, title: 'Aluguel de pranchas de surf', price: '250$', extra: 'ALUGUEL (Todo dia)' },
-	{ img: fotos, title: 'Fotos e vídeos', price: '150$', extra: 'FOTO (Adicional)' },
-	{ img: yoga, title: 'Aulas de SupYoga', price: '200$', extra: 'YOGA (1HS.)' },
+	{ img: clases, title: 'Aulas personalizadas de surf', price: '200$', extra: '(1HS.)' },
+	{ img: alquiler, title: 'Aluguel de pranchas de surf', price: '250$', extra: '(Todo dia)' },
+	{ img: fotos, title: 'Fotos e vídeos', price: '150$', extra: '(Adicional)' },
+	{ img: yoga, title: 'Aulas de SupYoga', price: '200$', extra: '(1HS.)' },
 ];
 
 function Services() {

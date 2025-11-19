@@ -41,7 +41,7 @@ function Levels() {
 			<div className="w-full mt-8 grid justify-center items-center grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-16">
 				{info.map((x, index) => (
 					<div key={index} className="flex flex-col justify-center items-center">
-						<img src={x.img} alt="" />
+						<img src={x.img} alt="Surf lessons for beginners in Itamambuca, Ubatuba" />
 						<h4 className="text-negro mt-3 font-semibold uppercase text-base text-center tracking-widest">
 							{x.titulo}
 						</h4>

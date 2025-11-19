@@ -1,24 +1,86 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" translate="no">
 	<head>
 		<meta charset="UTF-8" />
-		<link rel="icon" type="image/svg+xml" href="/wave.ico" />
-		<link rel="canonical" href="https://tusitio.com" />
+
+		<!-- Ícono -->
+		<link rel="icon" type="image/x-icon" href="/wave.ico" />
+
+		<!-- Evitar traducción automática de Google -->
+		<meta name="google" content="notranslate" />
+
+		<!-- Canonical (cambiá la URL cuando tengas el dominio final) -->
+		<link rel="canonical" href="https://morroboysurf.netlify.app" />
+
+		<!-- Responsive -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- SEO básico -->
+		<title>Escola de Surf Morro Boy - Aulas de Surf em Itamambuca</title>
+
 		<meta
 			name="description"
 			content="Aulas de surf em Itamambuca para todas as idades e níveis. Instrutores experientes, pranchas incluídas e condições perfeitas para aprender a surfar. Reserve hoje!"
 		/>
 
+		<!-- Keywords PT + EN -->
 		<meta
 			name="keywords"
-			content="surf, aulas de surf, surf itamambuca, escola de surf, ubatuba surf, morro boy surf, aprender surf, surf iniciante"
+			content="surf, aulas de surf, surf itamambuca, escola de surf, ubatuba surf, morro boy surf, aprender surf, surf iniciante, surf lessons, surf school, surf ubatuba, surf for beginners"
 		/>
+
+		<!-- Open Graph (para compartilhar em WhatsApp, Instagram, etc.) -->
+		<meta property="og:title" content="Escola de Surf Morro Boy - Itamambuca" />
+		<meta
+			property="og:description"
+			content="Aprenda a surfar nas ondas de Itamambuca com instrutores experientes. Aulas para todas as idades e níveis."
+		/>
+		<!-- coloca este arquivo og-morroboysurf.png em /public -->
+		<meta property="og:image" content="https://morroboysurf.netlify.app/og-morroboysurf.png" />
+		<meta property="og:url" content="https://morroboysurf.netlify.app" />
+		<meta property="og:type" content="website" />
+
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Escola de Surf Morro Boy - Itamambuca" />
+		<meta
+			name="twitter:description"
+			content="Aulas de surf em Itamambuca para todas as idades. Instrutores experientes e pranchas incluídas."
+		/>
+		<meta name="twitter:image" content="https://morroboysurf.netlify.app/og-morroboysurf.png" />
+
+		<!-- CSS -->
 		<link href="/src/style.css" rel="stylesheet" />
-		<title>Morro Boy surf</title>
+
+		<!-- Fonts -->
 		<style>
 			@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Mr+Dafoe&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 		</style>
+
+		<!-- Schema.org: negócio local / escola de surf -->
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "SportsActivityLocation",
+				"name": "Escola de Surf Morro Boy",
+				"description": "Aulas de surf em Itamambuca, Ubatuba, para todas as idades e níveis.",
+				"url": "https://morroboysurf.netlify.app",
+				"logo": "https://morroboysurf.netlify.app/wave.ico",
+				"image": "https://morroboysurf.netlify.app/og-morroboysurf.png",
+				"address": {
+					"@type": "PostalAddress",
+					"addressLocality": "Ubatuba",
+					"addressRegion": "SP",
+					"addressCountry": "BR"
+				},
+				"geo": {
+					"@type": "GeoCoordinates",
+					"latitude": -23.435,
+					"longitude": -45.073
+				},
+				"sameAs": ["https://www.instagram.com/SEU_INSTAGRAM_AQUI"]
+			}
+		</script>
 	</head>
 	<body>
 		<div id="root"></div>
