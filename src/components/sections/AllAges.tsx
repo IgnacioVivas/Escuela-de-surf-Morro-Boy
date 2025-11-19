@@ -76,7 +76,7 @@ function AllAges() {
 
 				<span className="text-negro font-semibold text-lg">Surf é conexão, alegria e memória para a vida toda.</span>
 
-				<ButtonDos>Quero desconto familiar</ButtonDos>
+				<ButtonDos className="w-full md:w-fit">Quero desconto familiar</ButtonDos>
 			</div>
 		</section>
 	);
