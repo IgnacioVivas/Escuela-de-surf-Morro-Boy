@@ -25,7 +25,7 @@ const Navigation = () => {
 			)}
 		>
 			{/* BUTTON IZQUIERDA */}
-			<div className="hidden md:block">
+			<div className="hidden lg:block">
 				<ButtonUno>
 					<a href={url} target="_blank">
 						RESERVE HOJE
@@ -34,7 +34,7 @@ const Navigation = () => {
 			</div>
 
 			<div className="absolute left-1/2 -translate-x-1/2 flex items-center gap-8">
-				<nav className="hidden md:flex gap-6">
+				<nav className="hidden lg:flex gap-6 lg:gap-4 xl:gap-6">
 					<a
 						href="#paraiso"
 						className={cn(
@@ -68,7 +68,7 @@ const Navigation = () => {
 
 				<img src={logo} alt="Logo Morro Boy" className="w-20" />
 
-				<nav className="hidden md:flex gap-6">
+				<nav className="hidden lg:flex gap-6 lg:gap-4 xl:gap-6">
 					<a
 						href="#locais"
 						className={cn(

@@ -7,7 +7,7 @@ const SocialBar = () => {
 	const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
 	return (
-		<div className="hidden bg-white h-[6vh] px-5 md:px-10 border-b-2 border-b-[#F4F4F4] md:flex justify-between items-center">
+		<div className="hidden bg-white h-[6vh] px-5 md:px-10 border-b-2 border-b-[#F4F4F4] lg:flex justify-between items-center">
 			<div className="flex items-center gap-3 font-semibold text-negro">
 				<span className="text-xs cursor-default">NOS SIGA:</span>
 				<div className="flex items-center gap-2">
