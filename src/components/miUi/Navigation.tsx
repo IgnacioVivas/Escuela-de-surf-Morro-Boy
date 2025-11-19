@@ -8,6 +8,7 @@ import { useNavScroll } from '@/hooks/useNavScroll';
 import { cn } from '@/lib/utils';
 import MenuDesktop from './MenuDesktop';
 import { useState } from 'react';
+import MenuMobile from './MenuMobile';
 
 const Navigation = () => {
 	const sections = ['paraiso', 'agendar', 'niveis', 'locais', 'experiencia', 'familias'];
@@ -16,6 +17,7 @@ const Navigation = () => {
 	const { isFixed, showMobile } = useNavScroll();
 
 	const [openMenuDesktop, setOpenMenuDesktop] = useState(false);
+	const [openMenuMobile, setOpenMenuMobile] = useState(false);
 
 	const phone = '5493517713933';
 	const message = 'Olá! Quero começar as aulas de surf. Pode me passar mais informações?';
@@ -109,8 +111,9 @@ const Navigation = () => {
 
 			{/* MOBILE */}
 			<div
+				onClick={() => setOpenMenuMobile(true)}
 				className={cn(
-					'ml-auto md:hidden w-14 h-14 rounded-full bg-celeste flex justify-center items-center cursor-pointer transition-all',
+					'ml-auto lg:hidden w-14 h-14 rounded-full bg-celeste flex justify-center items-center cursor-pointer transition-all',
 					!showMobile && 'opacity-0 pointer-events-none',
 				)}
 			>
@@ -120,12 +123,14 @@ const Navigation = () => {
 			{/* DESKTOP */}
 			<div
 				onClick={() => setOpenMenuDesktop(true)}
-				className="hidden md:flex w-14 h-14 rounded-full bg-celeste justify-center items-center ml-auto cursor-pointer"
+				className="hidden lg:flex w-14 h-14 rounded-full bg-celeste justify-center items-center ml-auto cursor-pointer"
 			>
 				<Waves color="white" size={32} />
 			</div>
 
 			<MenuDesktop open={openMenuDesktop} onOpenChange={setOpenMenuDesktop} />
+
+			<MenuMobile isOpen={openMenuMobile} onClose={() => setOpenMenuMobile(false)} />
 		</div>
 	);
 };

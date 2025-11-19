@@ -58,23 +58,6 @@ function MyCalendar() {
 
 	return (
 		<Card className="gap-0 p-0">
-			<CardHeader className="border-b">
-				<CardTitle>{localizedStrings[locale].title}</CardTitle>
-				<CardDescription>{localizedStrings[locale].description}</CardDescription>
-
-				<CardAction>
-					<Select value={locale} onValueChange={(value) => setLocale(value as keyof typeof localizedStrings)}>
-						<SelectTrigger className="w-[150px]">
-							<SelectValue placeholder="Idioma" />
-						</SelectTrigger>
-						<SelectContent align="end">
-							<SelectItem value="pt-BR">Português</SelectItem>
-							<SelectItem value="en-US">English</SelectItem>
-						</SelectContent>
-					</Select>
-				</CardAction>
-			</CardHeader>
-
 			<CardContent className="relative p-0 md:pr-48">
 				<div className="p-6">
 					<Calendar
