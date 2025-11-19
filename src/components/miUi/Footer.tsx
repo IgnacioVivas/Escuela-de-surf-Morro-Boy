@@ -26,19 +26,18 @@ function Footer() {
 					</h3>
 					<div className="flex gap-2">
 						<a
-							href="https://www.facebook.com/p/Morro-Boy-Escola-de-Surf-100070004620773/"
-							target="_blank"
-							className="bg-naranja size-10 flex justify-center items-center rounded-full"
-						>
-							<Facebook color="white" size={25} />
-						</a>
-
-						<a
 							href="https://www.instagram.com/morroboyescoladesurf/"
 							target="_blank"
 							className="bg-naranja size-10 flex justify-center items-center rounded-full"
 						>
 							<Instagram color="white" size={25} />
+						</a>
+						<a
+							href="https://www.facebook.com/p/Morro-Boy-Escola-de-Surf-100070004620773/"
+							target="_blank"
+							className="bg-naranja size-10 flex justify-center items-center rounded-full"
+						>
+							<Facebook color="white" size={25} />
 						</a>
 					</div>
 				</div>
