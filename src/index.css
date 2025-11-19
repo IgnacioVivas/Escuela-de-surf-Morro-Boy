@@ -7,12 +7,6 @@ html {
 	scroll-behavior: smooth;
 }
 
-/* body {
-	margin: 0;
-	padding: 0;
-	line-height: 1.6;
-} */
-
 @theme inline {
 	--color-celeste: #0de9df;
 	--color-celeste-secundario: #16d5cc;
@@ -23,7 +17,6 @@ html {
 	--color-amarillo: #ffde0f;
 	--color-naranja: #ffb434;
 
-	/* --font-josefin: 'Josefin Sans', sans-serif; */
 	--font-jost: 'Jost', sans-serif;
 	--font-source: 'Source Sans 3', sans-serif;
 	--font-dafoe: 'Mr Dafoe', cursive;

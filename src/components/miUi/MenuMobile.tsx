@@ -33,7 +33,7 @@ const MenuMobile = ({ isOpen, onClose }: MenuMobileProps) => {
 		};
 	}, [isOpen]);
 
-	const handleMenuClick = (section: string) => {
+	const handleMenuClick = () => {
 		onClose();
 	};
 
@@ -80,7 +80,7 @@ const MenuMobile = ({ isOpen, onClose }: MenuMobileProps) => {
 							<a
 								key={item.id}
 								href={`#${item.id}`}
-								onClick={() => handleMenuClick(item.id)}
+								onClick={handleMenuClick}
 								className={cn(
 									'text-xs uppercase font-bold text-negro py-4 px-4 rounded-lg hover:bg-celeste hover:bg-opacity-10 hover:pl-6 border-l-4 border-transparent transform transition-transform duration-500',
 									active === item.id
