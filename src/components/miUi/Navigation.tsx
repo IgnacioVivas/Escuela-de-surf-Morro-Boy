@@ -1,15 +1,21 @@
+'use client';
+
 import { Waves } from 'lucide-react';
 import logo from '@/assets/logo-negro.png';
 import ButtonUno from './ButtonUno';
 import { useActiveSection } from '@/hooks/useActiveSection';
 import { useNavScroll } from '@/hooks/useNavScroll';
 import { cn } from '@/lib/utils';
+import MenuDesktop from './MenuDesktop';
+import { useState } from 'react';
 
 const Navigation = () => {
 	const sections = ['paraiso', 'agendar', 'niveis', 'locais', 'experiencia', 'familias'];
 	const active = useActiveSection(sections);
 
 	const { isFixed, showMobile } = useNavScroll();
+
+	const [openMenuDesktop, setOpenMenuDesktop] = useState(false);
 
 	const phone = '5493517713933';
 	const message = 'Olá! Quero começar as aulas de surf. Pode me passar mais informações?';
@@ -112,9 +118,14 @@ const Navigation = () => {
 			</div>
 
 			{/* DESKTOP */}
-			<div className="hidden md:flex w-14 h-14 rounded-full bg-celeste justify-center items-center ml-auto cursor-pointer">
+			<div
+				onClick={() => setOpenMenuDesktop(true)}
+				className="hidden md:flex w-14 h-14 rounded-full bg-celeste justify-center items-center ml-auto cursor-pointer"
+			>
 				<Waves color="white" size={32} />
 			</div>
+
+			<MenuDesktop open={openMenuDesktop} onOpenChange={setOpenMenuDesktop} />
 		</div>
 	);
 };
