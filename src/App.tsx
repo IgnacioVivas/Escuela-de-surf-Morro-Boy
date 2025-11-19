@@ -2,6 +2,7 @@ import BackToTop from './components/miUi/BackToTop';
 import Footer from './components/miUi/Footer';
 import Header from './components/miUi/Header';
 import WhatssAppButton from './components/miUi/WhatssAppButton';
+import AllAges from './components/sections/AllAges';
 import Banner from './components/sections/Banner';
 import Booking from './components/sections/Booking';
 import Experience from './components/sections/Experience';
@@ -27,6 +28,10 @@ function App() {
 
 			<div className="py-30">
 				<Reasons />
+			</div>
+
+			<div className="px-15 pb-28 md:px-10 xl:px-32 flex flex-col gap-[105px]">
+				<AllAges />
 			</div>
 			<Banner />
 			<Footer />

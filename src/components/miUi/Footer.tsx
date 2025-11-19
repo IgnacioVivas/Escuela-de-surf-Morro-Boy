@@ -6,9 +6,9 @@ function Footer() {
 		<div className="bg-[#0C0C0C]">
 			<div className="px-10 xl:px-30 py-28 grid grid-cols-1 xl:grid-cols-4 gap-10">
 				<div className="flex flex-col gap-4">
-					<h2 className="text-white text-3xl font-dafoe tracking-widest font-bold uppercase">
+					<h1 className="text-white text-3xl font-dafoe tracking-widest font-bold uppercase">
 						Escola de surf Morro Boy
-					</h2>
+					</h1>
 					<span className="text-[17px] text-[#adadad]">
 						O lugar onde a paixão pelo surf encontra o espírito de Itamambuca. A Morro Boy oferece aulas seguras,
 						personalizadas e cheias de energia — para que você viva a verdadeira essência do surf em Ubatuba.

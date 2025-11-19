@@ -1,8 +1,9 @@
 import imgDos from '@/assets/trayectoria-2.jpg';
+import imgUno from '@/assets/morro-1.webp';
 
 function Experience() {
 	return (
-		<div className="flex flex-col md:flex-row justify-center items-center gap-16 lg:gap-20">
+		<div id="experiencia" className="flex flex-col-reverse md:flex-row justify-center items-center gap-16 lg:gap-20">
 			<div className="md:w-1/2">
 				<h2 className="text-3xl text-negro md:text-[40px] uppercase tracking-widest mb-4">
 					Mais de dez anos dentro d’água
@@ -21,7 +22,8 @@ function Experience() {
 				</p>
 			</div>
 			<div className="flex gap-3 md:w-1/2">
-				<img src={imgDos} alt="" className="w-full object-cover" />
+				<img src={imgUno} alt="morro surfeando" className="w-[40%] object-cover" />
+				<img src={imgDos} alt="morro surfeando" className="w-[60%] object-cover" />
 			</div>
 		</div>
 	);

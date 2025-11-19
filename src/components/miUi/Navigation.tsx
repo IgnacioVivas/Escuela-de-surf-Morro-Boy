@@ -1,31 +1,203 @@
+// import { Waves } from 'lucide-react';
+// import logo from '@/assets/logo-negro.png';
+// import ButtonUno from './ButtonUno';
+// import { useActiveSection } from '@/hooks/useActiveSection';
+// import { cn } from '@/lib/utils';
+
+// const Navigation = () => {
+// 	const sections = ['paraiso', 'agendar', 'niveis', 'locais', 'experiencia', 'familias'];
+// 	const active = useActiveSection(sections);
+
+// 	return (
+// 		<div className="relative fixed px-5 md:px-10 h-[12vh] w-full bg-white flex items-center justify-between">
+// 			<div className="hidden md:block">
+// 				<ButtonUno>RESERVE HOJE</ButtonUno>
+// 			</div>
+
+// 			<div className="absolute left-1/2 -translate-x-1/2 flex items-center gap-8">
+// 				<nav className="hidden md:flex gap-6">
+// 					<a
+// 						href="#paraiso"
+// 						className={cn(
+// 							'uppercase font-bold text-negro text-xs hover:text-celeste-secundario tracking-widest cursor-pointer',
+// 							active === 'paraiso' && 'text-celeste-secundario',
+// 						)}
+// 					>
+// 						Paraíso
+// 					</a>
+
+// 					<a
+// 						href="#agendar"
+// 						className={cn(
+// 							'uppercase font-bold text-negro text-xs hover:text-celeste-secundario tracking-widest cursor-pointer',
+// 							active === 'agendar' && 'text-celeste-secundario',
+// 						)}
+// 					>
+// 						Agendar
+// 					</a>
+
+// 					<a
+// 						href="#niveis"
+// 						className={cn(
+// 							'uppercase font-bold text-negro text-xs hover:text-celeste-secundario tracking-widest cursor-pointer',
+// 							active === 'niveis' && 'text-celeste-secundario',
+// 						)}
+// 					>
+// 						Níveis
+// 					</a>
+// 				</nav>
+
+// 				<img src={logo} alt="Logo Morro Boy" className="w-20" />
+
+// 				<nav className="hidden md:flex gap-6">
+// 					<a
+// 						href="#locais"
+// 						className={cn(
+// 							'uppercase font-bold text-negro text-xs hover:text-celeste-secundario tracking-widest cursor-pointer',
+// 							active === 'locais' && 'text-celeste-secundario',
+// 						)}
+// 					>
+// 						Locais
+// 					</a>
+
+// 					<a
+// 						href="#experiencia"
+// 						className={cn(
+// 							'uppercase font-bold text-negro text-xs hover:text-celeste-secundario tracking-widest cursor-pointer',
+// 							active === 'experiencia' && 'text-celeste-secundario',
+// 						)}
+// 					>
+// 						Experiência
+// 					</a>
+
+// 					<a
+// 						href="#familias"
+// 						className={cn(
+// 							'uppercase font-bold text-negro text-xs hover:text-celeste-secundario tracking-widest cursor-pointer',
+// 							active === 'familias' && 'text-celeste-secundario',
+// 						)}
+// 					>
+// 						Famílias
+// 					</a>
+// 				</nav>
+// 			</div>
+
+// 			{/* MOBILE */}
+// 			<div className="ml-auto md:hidden w-14 h-14 rounded-full bg-celeste flex justify-center items-center cursor-pointer">
+// 				<Waves color="white" size={32} />
+// 			</div>
+
+// 			{/* DESKTOP */}
+// 			<div className="hidden md:flex w-14 h-14 rounded-full bg-celeste justify-center items-center ml-auto cursor-pointer">
+// 				<Waves color="white" size={32} />
+// 			</div>
+// 		</div>
+// 	);
+// };
+
+// export default Navigation;
+
 import { Waves } from 'lucide-react';
 import logo from '@/assets/logo-negro.png';
-
 import ButtonUno from './ButtonUno';
-// h-[70px] md:h-20
+import { useActiveSection } from '@/hooks/useActiveSection';
+import { useNavScroll } from '@/hooks/useNavScroll';
+import { cn } from '@/lib/utils';
+
 const Navigation = () => {
+	const sections = ['paraiso', 'agendar', 'niveis', 'locais', 'experiencia', 'familias'];
+	const active = useActiveSection(sections);
+
+	const { isFixed, showMobile } = useNavScroll();
+
 	return (
-		<div className="relative px-5 md:px-10 h-[12vh] bg-white flex items-center justify-between">
+		<div
+			className={cn(
+				'px-5 md:px-10 h-[12vh] w-full flex items-center justify-between bg-white z-50 transition-all duration-300',
+				isFixed ? 'fixed top-0' : 'relative',
+				!showMobile && '-translate-y-full md:translate-y-0',
+			)}
+		>
+			{/* BUTTON IZQUIERDA */}
 			<div className="hidden md:block">
 				<ButtonUno>RESERVE HOJE</ButtonUno>
 			</div>
 
-			<div className="absolute left-1/2 -translate-x-1/2 flex items-center gap-4">
-				<nav className="hidden md:flex gap-4">
-					<span>1</span>
-					<span>2</span>
+			<div className="absolute left-1/2 -translate-x-1/2 flex items-center gap-8">
+				<nav className="hidden md:flex gap-6">
+					<a
+						href="#paraiso"
+						className={cn(
+							'uppercase font-bold text-negro text-xs hover:text-celeste-secundario tracking-widest cursor-pointer',
+							active === 'paraiso' && 'text-celeste-secundario',
+						)}
+					>
+						Paraíso
+					</a>
+
+					<a
+						href="#agendar"
+						className={cn(
+							'uppercase font-bold text-negro text-xs hover:text-celeste-secundario tracking-widest cursor-pointer',
+							active === 'agendar' && 'text-celeste-secundario',
+						)}
+					>
+						Agendar
+					</a>
+
+					<a
+						href="#niveis"
+						className={cn(
+							'uppercase font-bold text-negro text-xs hover:text-celeste-secundario tracking-widest cursor-pointer',
+							active === 'niveis' && 'text-celeste-secundario',
+						)}
+					>
+						Níveis
+					</a>
 				</nav>
 
 				<img src={logo} alt="Logo Morro Boy" className="w-20" />
 
-				<nav className="hidden md:flex gap-4">
-					<span>3</span>
-					<span>4</span>
+				<nav className="hidden md:flex gap-6">
+					<a
+						href="#locais"
+						className={cn(
+							'uppercase font-bold text-negro text-xs hover:text-celeste-secundario tracking-widest cursor-pointer',
+							active === 'locais' && 'text-celeste-secundario',
+						)}
+					>
+						Locais
+					</a>
+
+					<a
+						href="#experiencia"
+						className={cn(
+							'uppercase font-bold text-negro text-xs hover:text-celeste-secundario tracking-widest cursor-pointer',
+							active === 'experiencia' && 'text-celeste-secundario',
+						)}
+					>
+						Experiência
+					</a>
+
+					<a
+						href="#familias"
+						className={cn(
+							'uppercase font-bold text-negro text-xs hover:text-celeste-secundario tracking-widest cursor-pointer',
+							active === 'familias' && 'text-celeste-secundario',
+						)}
+					>
+						Famílias
+					</a>
 				</nav>
 			</div>
 
 			{/* MOBILE */}
-			<div className="ml-auto md:hidden w-14 h-14 rounded-full bg-celeste flex justify-center items-center cursor-pointer">
+			<div
+				className={cn(
+					'ml-auto md:hidden w-14 h-14 rounded-full bg-celeste flex justify-center items-center cursor-pointer transition-all',
+					!showMobile && 'opacity-0 pointer-events-none',
+				)}
+			>
 				<Waves color="white" size={32} />
 			</div>
 
