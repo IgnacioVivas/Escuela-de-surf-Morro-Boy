@@ -18,7 +18,7 @@ function Booking() {
 					praia.
 				</p>
 
-				<span className="text-[19px] text-negro">O mar te espera. Só falta você.</span>
+				<span className="text-negro font-semibold text-base">O mar te espera. Só falta você.</span>
 
 				{/*  MOBILE → botón va después del calendario
              DESKTOP → botón va acá debajo del texto */}

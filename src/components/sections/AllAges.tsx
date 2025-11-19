@@ -1,84 +1,38 @@
-import img1 from '@/assets/allAges-1.png';
-import img2 from '@/assets/allAges-2.png';
-import img3 from '@/assets/allAges-3.jpg';
-import img4 from '@/assets/allAges-4.png';
-import img5 from '@/assets/allAges-5.png';
 import ButtonDos from '../miUi/ButtonDos';
+import imgCollage from '@/assets/collage.png';
 
 function AllAges() {
+	const phone = '5493517713933';
+	const message = 'Olá! Gostaria de saber sobre o desconto familiar para aulas de surf.';
+
+	const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
 	return (
-		<section id="familias" className="flex flex-col md:flex-row items-center gap-16">
-			{/* Collage de imágenes superpuestas */}
-			<div className="relative w-full md:w-1/2 flex justify-center">
-				{/* Imagen principal de fondo */}
-				<div className="relative">
-					<img src={img4} className="object-cover w-full md:w-[500px]" />
-				</div>
-
-				{/* Imagen flotante arriba a la izquirda */}
-				<img
-					src={img1}
-					className="
-            absolute -top-6 left-3 
-            w-40 md:w-56 
-            rounded-xl object-cover
-            shadow-xl 
-            rotate-3
-          "
-				/>
-
-				{/* Imagen flotante arriba a la derecha */}
-				<img
-					src={img5}
-					className="
-            absolute -top-6 -right-2 
-            w-30 md:w-48 
-            rounded-xl object-cover
-            shadow-xl 
-            rotate-3
-          "
-				/>
-
-				{/* Imagen flotante abajo a la derecha */}
-				<img
-					src={img2}
-					className="
-            absolute bottom-2 -right-10 
-            w-30 md:w-48 
-            rounded-xl object-cover
-            shadow-xl 
-            rotate-3
-          "
-				/>
-
-				{/* Imagen flotante abajo a la izquierda */}
-				<img
-					src={img3}
-					className="
-            absolute bottom-0 -left-12 
-            w-40 md:w-80 
-            object-cover
-            shadow-lg
-            -rotate-6
-          "
-				/>
+		<div id="familias" className="flex flex-col md:flex-row items-center gap-16">
+			<div className="relative w-full lg:w-1/2 flex justify-center">
+				<img src={imgCollage} alt="collage de fotos" />
 			</div>
 
-			<div className="w-full md:w-1/2 flex flex-col gap-4">
-				<h2 className="text-3xl md:text-4xl uppercase tracking-[.08em] text-negro">Surf para todas as idades</h2>
+			<div className="w-full lg:w-1/2 flex flex-col gap-4">
+				<h2 className="text-3xl text-negro md:text-[40px] uppercase tracking-widest">Surf para todas as idades</h2>
 
 				<p className="text-gris text-[19px] leading-relaxed">A partir dos 4 anos, todos podem entrar no mar.</p>
 
-				<p className="text-gris text-[18px] leading-relaxed">
+				<p className="text-[17px] font-source text-gris leading-relaxed">
 					Na nossa escola, o surf é para todo mundo — crianças, adolescentes, adultos iniciantes e famílias inteiras. As
 					aulas são divertidas, seguras e adaptadas ao ritmo e à confiança de cada aluno.
 				</p>
 
-				<span className="text-negro font-semibold text-lg">Surf é conexão, alegria e memória para a vida toda.</span>
+				<span className="text-negro font-semibold text-base">Surf é conexão, alegria e memória para a vida toda.</span>
 
-				<ButtonDos className="w-full md:w-fit">Quero desconto familiar</ButtonDos>
+				<ButtonDos className="w-full py-6 md:py-5 md:w-fit">
+					<a href={url} target="_blank">
+						Quero desconto <br className="md:hidden" />
+						familiar
+					</a>
+				</ButtonDos>
 			</div>
-		</section>
+		</div>
 	);
 }
 
