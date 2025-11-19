@@ -9,9 +9,13 @@ function Paradise() {
 			</div>
 			<div>
 				<h2 className="text-3xl text-negro md:text-[40px] uppercase tracking-[.08em] mb-1">Paraíso dos surfistas</h2>
-				<div className="flex items-center gap-1 text-naranja mb-4">
-					<MapPin size={14} /> <span className="text-sm">Itamambuca 215</span>
-				</div>
+				<a
+					className="flex items-center gap-1 text-naranja mb-4 hover:text-amarillo"
+					href="https://maps.app.goo.gl/MHGEskEDKTHYR6GBA"
+					target="_blank"
+				>
+					<MapPin size={14} /> <span className="text-sm">Praia do Itamambuca, Ubatuba - SP</span>
+				</a>
 				<p className="text-[19px] text-gris leading-relaxed">
 					Ubatuba é um pedacinho de paraíso no litoral de São Paulo — um lugar onde a mata atlântica abraça o mar e as
 					ondas parecem feitas sob medida para quem vive a paixão pelo surf. Aqui, cada praia tem sua própria energia:
