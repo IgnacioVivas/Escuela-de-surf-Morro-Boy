@@ -59,19 +59,20 @@ function Footer() {
 				</div>
 			</div>
 
-			<div className="hidden w-full md:flex items-center justify-center py-4 px-2 bg-black">
-				<a href="">
-					<span className="text-gris-secundario text-xs text-center">
-						Feito com 🌊 e ☀️ em Itamambuca — Desenvolvido por Ignacio Vivas
-					</span>
+			<div className="w-full flex items-center justify-center py-4 px-2 bg-black">
+				<a
+					href="https://www.linkedin.com/in/ignacio-vivas-viscarra/"
+					target="_blank"
+					className="sm:hidden text-gris-secundario text-xs text-center hover:text-celeste"
+				>
+					Feito com 🌊 e ☀️ em Itamambuca <br /> Desenvolvido por Ignacio Vivas
 				</a>
-			</div>
-
-			<div className="w-full flex flex-col items-center justify-center py-4 px-2 bg-black md:hidden">
-				<a href="">
-					<span className="text-gris-secundario text-xs text-center">Feito com 🌊 e ☀️ em Itamambuca</span>
-
-					<span className="text-gris-secundario text-xs text-center">Desenvolvido por Ignacio Vivas</span>
+				<a
+					href="https://www.linkedin.com/in/ignacio-vivas-viscarra/"
+					target="_blank"
+					className="hidden sm:block text-gris-secundario text-xs text-center hover:text-celeste"
+				>
+					Feito com 🌊 e ☀️ em Itamambuca — Desenvolvido por Ignacio Vivas
 				</a>
 			</div>
 		</div>

@@ -31,7 +31,7 @@ function WhatssAppButton() {
         shadow-lg cursor-pointer z-50
         hover:scale-[1.10] active:scale-95
         transition-all duration-300`,
-				isBackToTopVisible ? 'bottom-48' : 'bottom-10',
+				isBackToTopVisible ? 'bottom-58' : 'bottom-10',
 			)}
 		>
 			<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">

@@ -29,7 +29,7 @@ function BackToTop() {
 			onClick={scrollToTop}
 			className={cn(
 				`fixed flex items-center gap-1.5 
-         right-[-50px] bottom-20 
+         right-[-50px] bottom-34 
          text-negro font-semibold tracking-widest
          transition-all duration-300
          cursor-pointer z-50 origin-center
