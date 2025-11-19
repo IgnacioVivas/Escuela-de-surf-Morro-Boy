@@ -6,11 +6,11 @@ function Experience() {
 		<div id="experiencia" className="flex flex-col-reverse md:flex-row justify-center items-center gap-16 lg:gap-20">
 			<div className="md:w-1/2">
 				<h2 className="text-3xl text-negro md:text-[40px] uppercase tracking-widest mb-4">
-					Mais de dez anos dentro d’água
+					Mais de vinte anos dentro d’água
 				</h2>
 
 				<p className="text-[19px] text-gris leading-relaxed mb-3.5">
-					Há mais de uma década, vivemos e ensinamos o surf nas praias de Ubatuba. Nossa história começou com uma
+					Há mais de duas décadas, vivemos e ensinamos o surf nas praias de Ubatuba. Nossa história começou com uma
 					simples paixão: o amor pelo mar.
 				</p>
 
@@ -21,9 +21,9 @@ function Experience() {
 					inesquecível.
 				</p>
 			</div>
-			<div className="flex gap-3 md:w-1/2">
-				<img src={imgUno} alt="morro surfeando" className="w-[40%] object-cover" />
-				<img src={imgDos} alt="morro surfeando" className="w-[60%] object-cover" />
+			<div className="flex flex-col gap-3 w-full lg:flex-row md:w-1/2">
+				<img src={imgUno} alt="morro surfeando" className="w-full lg:w-[40%] object-cover" />
+				<img src={imgDos} alt="morro surfeando" className="w-full lg:w-[60%] object-cover" />
 			</div>
 		</div>
 	);

@@ -42,7 +42,9 @@ function Levels() {
 				{info.map((x, index) => (
 					<div key={index} className="flex flex-col justify-center items-center">
 						<img src={x.img} alt="" />
-						<h4 className="text-negro mt-3 font-semibold uppercase text-base tracking-widest">{x.titulo}</h4>
+						<h4 className="text-negro mt-3 font-semibold uppercase text-base text-center tracking-widest">
+							{x.titulo}
+						</h4>
 						<span className="text-center text-gris font-source mt-2">{x.text}</span>
 					</div>
 				))}
