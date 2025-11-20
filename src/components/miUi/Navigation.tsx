@@ -19,7 +19,7 @@ const Navigation = () => {
 	const [openMenuDesktop, setOpenMenuDesktop] = useState(false);
 	const [openMenuMobile, setOpenMenuMobile] = useState(false);
 
-	const phone = '5493517713933';
+	const phone = '5512996049078';
 	const message = 'Olá! Quero começar as aulas de surf. Pode me passar mais informações?';
 
 	const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;

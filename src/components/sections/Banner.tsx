@@ -3,7 +3,7 @@ import ButtonUno from '../miUi/ButtonUno';
 import waves from '@/assets/waves-small.png';
 
 function Banner() {
-	const phone = '5493517713933';
+	const phone = '5512996049078';
 	const message = 'Olá! Quero começar as aulas de surf. Pode me passar mais informações?';
 
 	const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;

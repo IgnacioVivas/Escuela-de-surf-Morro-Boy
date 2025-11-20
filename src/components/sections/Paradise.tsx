@@ -3,7 +3,10 @@ import { MapPin } from 'lucide-react';
 
 function Paradise() {
 	return (
-		<div id="paraiso" className="flex flex-col md:flex-row items-center justify-center gap-16 lg:gap-20">
+		<div
+			id="paraiso"
+			className="scroll-mt-[12vh] flex flex-col md:flex-row items-center justify-center gap-16 lg:gap-20"
+		>
 			<div>
 				<img src={paradise} alt="" />
 			</div>

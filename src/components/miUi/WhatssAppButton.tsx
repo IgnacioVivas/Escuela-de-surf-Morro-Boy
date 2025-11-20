@@ -2,7 +2,7 @@ import { cn } from '@/lib/utils';
 import { useEffect, useState } from 'react';
 
 function WhatssAppButton() {
-	const phone = '5493517713933';
+	const phone = '5512996049078';
 	const message = 'Olá! Gostaria de saber mais sobre as aulas de surf.';
 
 	const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;

@@ -1,7 +1,7 @@
 import { Facebook, Instagram, MapPin, Send, Smartphone } from 'lucide-react';
 
 const SocialBar = () => {
-	const phone = '5493517713933';
+	const phone = '5512996049078';
 	const message = 'Olá! Quero começar as aulas de surf. Pode me passar mais informações?';
 
 	const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
@@ -27,7 +27,7 @@ const SocialBar = () => {
 					className="flex items-center justify-center gap-1 hover:text-celeste cursor-pointer"
 				>
 					<Smartphone size={14} />
-					<p>+55 12 XXXX-XXXX</p>
+					<p>+55 12 996049078</p>
 				</a>
 				<a target="_blank" className="flex items-center justify-center gap-1 hover:text-celeste cursor-pointer">
 					<Send size={14} />

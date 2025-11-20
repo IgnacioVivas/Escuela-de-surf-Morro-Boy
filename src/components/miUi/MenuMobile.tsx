@@ -16,7 +16,7 @@ const MenuMobile = ({ isOpen, onClose }: MenuMobileProps) => {
 	const sections = ['paraiso', 'agendar', 'niveis', 'locais', 'experiencia', 'familias'];
 	const active = useActiveSection(sections);
 
-	const phone = '5493517713933';
+	const phone = '5512996049078';
 	const message = 'Olá! Quero começar as aulas de surf. Pode me passar mais informações?';
 	const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 

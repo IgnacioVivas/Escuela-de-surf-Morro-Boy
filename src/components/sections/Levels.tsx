@@ -28,7 +28,7 @@ const info = [
 
 function Levels() {
 	return (
-		<div id="niveis" className="flex flex-col justify-center items-center gap-4">
+		<div id="niveis" className="scroll-mt-[12vh] flex flex-col justify-center items-center gap-4">
 			<h2 className="text-3xl text-center text-negro md:text-[40px] uppercase tracking-[.08em]">
 				Surf para todos os níveis
 			</h2>

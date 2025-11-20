@@ -10,7 +10,7 @@ import ButtonDos from './ButtonDos';
 export default function MyCalendar() {
 	const [dates, setDates] = React.useState<Date[]>([]);
 	const [selectedTime, setSelectedTime] = React.useState<string | null>(null);
-	const phone = '5493517713933';
+	const phone = '5512996049078';
 
 	// Generar horarios de 7:00 a 16:00 (de hora en hora)
 	const timeSlots = Array.from({ length: 10 }, (_, i) => {

@@ -8,7 +8,7 @@ interface MenuDesktopProps {
 }
 
 const MenuDesktop = ({ open, onOpenChange }: MenuDesktopProps) => {
-	const phone = '5493517713933';
+	const phone = '5512996049078';
 	const message = 'Olá! Quero começar as aulas de surf. Pode me passar mais informações?';
 
 	const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
@@ -41,7 +41,7 @@ const MenuDesktop = ({ open, onOpenChange }: MenuDesktopProps) => {
 								className="flex items-center justify-center gap-1 hover:text-celeste cursor-pointer"
 							>
 								<Smartphone color="black" size={14} />
-								<p>+55 12 XXXX-XXXX</p>
+								<p>+55 12 996049078</p>
 							</a>
 							<a target="_blank" className="flex items-center justify-center gap-1 hover:text-celeste cursor-pointer">
 								<Send color="black" size={14} />

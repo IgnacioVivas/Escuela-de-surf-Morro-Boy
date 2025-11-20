@@ -2,13 +2,13 @@ import ButtonDos from '../miUi/ButtonDos';
 import imgCollage from '@/assets/collage.png';
 
 function AllAges() {
-	const phone = '5493517713933';
+	const phone = '5512996049078';
 	const message = 'Olá! Gostaria de saber sobre o desconto familiar para aulas de surf.';
 
 	const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
 	return (
-		<div id="familias" className="flex flex-col md:flex-row items-center gap-16">
+		<div id="familias" className="scroll-mt-[12vh] flex flex-col md:flex-row items-center gap-16">
 			<div className="relative w-full lg:w-1/2 flex justify-center">
 				<img src={imgCollage} alt="collage de fotos" />
 			</div>
