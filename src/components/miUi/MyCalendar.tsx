@@ -7,7 +7,7 @@ import { Calendar } from '@/components/ui/calendar';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import ButtonDos from './ButtonDos';
 
-export default function Calendar20() {
+export default function MyCalendar() {
 	const [dates, setDates] = React.useState<Date[]>([]);
 	const [selectedTime, setSelectedTime] = React.useState<string | null>(null);
 	const phone = '5493517713933';

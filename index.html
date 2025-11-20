@@ -4,12 +4,12 @@
 		<meta charset="UTF-8" />
 
 		<!-- Ícono -->
-		<link rel="icon" type="image/x-icon" href="/wave.ico" />
+		<link rel="icon" type="image/svg+xml" href="/wave.svg" />
 
 		<!-- Evitar traducción automática de Google -->
 		<meta name="google" content="notranslate" />
 
-		<!-- Canonical (cambiá la URL cuando tengas el dominio final) -->
+		<!-- Canonical -->
 		<link rel="canonical" href="https://morroboysurf.netlify.app" />
 
 		<!-- Responsive -->
@@ -29,25 +29,35 @@
 			content="surf, aulas de surf, surf itamambuca, escola de surf, ubatuba surf, morro boy surf, aprender surf, surf iniciante, surf lessons, surf school, surf ubatuba, surf for beginners"
 		/>
 
-		<!-- Open Graph (para compartilhar em WhatsApp, Instagram, etc.) -->
+		<!-- ======================= -->
+		<!-- OPEN GRAPH PARA COMPARTILHAMENTO (Facebook / Instagram / LinkedIn) -->
+		<!-- ======================= -->
 		<meta property="og:title" content="Escola de Surf Morro Boy - Itamambuca" />
 		<meta
 			property="og:description"
 			content="Aprenda a surfar nas ondas de Itamambuca com instrutores experientes. Aulas para todas as idades e níveis."
 		/>
-		<!-- coloca este arquivo og-morroboysurf.png em /public -->
-		<meta property="og:image" content="https://morroboysurf.netlify.app/og-morroboysurf.png" />
+
+		<!-- IMAGEM PADRÃO 1200x630 -->
+		<meta property="og:image" content="https://morroboysurf.netlify.app/og-ubatuba.png" />
 		<meta property="og:url" content="https://morroboysurf.netlify.app" />
 		<meta property="og:type" content="website" />
 
-		<!-- Twitter Card -->
+		<!-- ======================= -->
+		<!-- TWITTER CARD -->
+		<!-- ======================= -->
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:title" content="Escola de Surf Morro Boy - Itamambuca" />
 		<meta
 			name="twitter:description"
 			content="Aulas de surf em Itamambuca para todas as idades. Instrutores experientes e pranchas incluídas."
 		/>
-		<meta name="twitter:image" content="https://morroboysurf.netlify.app/og-morroboysurf.png" />
+		<meta name="twitter:image" content="https://morroboysurf.netlify.app/og-ubatuba.png" />
+
+		<!-- ======================= -->
+		<!-- WHATSAPP (usa OG:image) / imagem especial -->
+		<!-- ======================= -->
+		<meta property="og:image" content="https://morroboysurf.netlify.app/og-ubatuba-whatsapp.png" />
 
 		<!-- CSS -->
 		<link href="/src/style.css" rel="stylesheet" />
@@ -57,7 +67,7 @@
 			@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Mr+Dafoe&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 		</style>
 
-		<!-- Schema.org: negócio local / escola de surf -->
+		<!-- Schema.org -->
 		<script type="application/ld+json">
 			{
 				"@context": "https://schema.org",
@@ -65,8 +75,8 @@
 				"name": "Escola de Surf Morro Boy",
 				"description": "Aulas de surf em Itamambuca, Ubatuba, para todas as idades e níveis.",
 				"url": "https://morroboysurf.netlify.app",
-				"logo": "https://morroboysurf.netlify.app/wave.ico",
-				"image": "https://morroboysurf.netlify.app/og-morroboysurf.png",
+				"logo": "https://morroboysurf.netlify.app/wave.svg",
+				"image": "https://morroboysurf.netlify.app/og-ubatuba.png",
 				"address": {
 					"@type": "PostalAddress",
 					"addressLocality": "Ubatuba",
@@ -78,10 +88,11 @@
 					"latitude": -23.435,
 					"longitude": -45.073
 				},
-				"sameAs": ["https://www.instagram.com/SEU_INSTAGRAM_AQUI"]
+				"sameAs": ["https://www.instagram.com/morroboyescoladesurf/"]
 			}
 		</script>
 	</head>
+
 	<body>
 		<div id="root"></div>
 		<script type="module" src="/src/main.tsx"></script>

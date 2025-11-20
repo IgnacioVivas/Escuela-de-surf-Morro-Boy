@@ -1,6 +1,7 @@
 import BackToTop from './components/miUi/BackToTop';
 import Footer from './components/miUi/Footer';
 import Header from './components/miUi/Header';
+import { SunSpinner } from './components/miUi/SunSpinner';
 import WhatssAppButton from './components/miUi/WhatssAppButton';
 import AllAges from './components/sections/AllAges';
 import Banner from './components/sections/Banner';
@@ -11,8 +12,15 @@ import Location from './components/sections/Location';
 import Paradise from './components/sections/Paradise';
 import Reasons from './components/sections/Reasons';
 import Servicios from './components/sections/Services';
+import { usePageLoad } from './hooks/usePageLoad';
 
 function App() {
+	const isLoading = usePageLoad();
+
+	if (isLoading) {
+		return <SunSpinner />;
+	}
+
 	return (
 		<div className="bg-white">
 			<Header />

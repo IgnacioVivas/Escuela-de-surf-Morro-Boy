@@ -1,4 +1,4 @@
-import Calendar20 from '../miUi/MyCalendar';
+import MyCalendar from '../miUi/MyCalendar';
 
 function Booking() {
 	return (
@@ -22,7 +22,7 @@ function Booking() {
 
 			{/* CALENDARIO */}
 			<div className="w-full lg:w-1/2 flex flex-col items-center gap-4 order-2 lg:order-2">
-				<Calendar20 />
+				<MyCalendar />
 			</div>
 		</div>
 	);
