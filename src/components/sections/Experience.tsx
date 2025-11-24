@@ -3,11 +3,8 @@ import imgUno from '@/assets/morro-1.webp';
 
 function Experience() {
 	return (
-		<div
-			id="experiencia"
-			className="scroll-mt-[15vh] flex flex-col-reverse md:flex-row justify-center items-center gap-16 lg:gap-20"
-		>
-			<div className="md:w-1/2">
+		<div className="flex flex-col-reverse md:flex-row justify-center items-center gap-16 lg:gap-20">
+			<div id="experiencia" className="md:w-1/2 scroll-mt-[15vh]">
 				<h2 className="text-3xl text-negro md:text-[40px] uppercase tracking-widest mb-4">
 					Mais de vinte anos dentro d’água
 				</h2>

@@ -2,14 +2,11 @@ import mapa from '@/assets/mapa.png';
 
 function Location() {
 	return (
-		<div
-			id="locais"
-			className="scroll-mt-[15vh] flex flex-col md:flex-row items-center justify-center gap-16 lg:gap-20"
-		>
+		<div className="flex flex-col md:flex-row items-center justify-center gap-16 lg:gap-20">
 			<div className="w-full md:w-1/2 lg:w-fit">
 				<img src={mapa} alt="mapa de las playas de ubatuba" className="w-full max-w-lg" />
 			</div>
-			<div className="md:w-1/2 lg:w-fit">
+			<div id="locais" className="md:w-1/2 lg:w-fit scroll-mt-[15vh]">
 				<h2 className="text-3xl text-negro md:text-[40px] uppercase tracking-widest mb-4">Locais incríveis</h2>
 
 				<p className="text-[19px] text-gris leading-relaxed">

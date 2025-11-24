@@ -8,12 +8,12 @@ function AllAges() {
 	const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
 	return (
-		<div id="familias" className="scroll-mt-[15vh] flex flex-col md:flex-row items-center gap-16">
+		<div className="flex flex-col md:flex-row items-center gap-16">
 			<div className="relative w-full lg:w-1/2 flex justify-center">
 				<img src={imgCollage} alt="collage de fotos" />
 			</div>
 
-			<div className="w-full lg:w-1/2 flex flex-col gap-4">
+			<div id="familias" className="scroll-mt-[15vh] w-full lg:w-1/2 flex flex-col gap-4">
 				<h2 className="text-3xl text-negro md:text-[40px] uppercase tracking-widest">Surf para todas as idades</h2>
 
 				<p className="text-gris text-[19px] leading-relaxed">A partir dos 4 anos, todos podem entrar no mar.</p>
