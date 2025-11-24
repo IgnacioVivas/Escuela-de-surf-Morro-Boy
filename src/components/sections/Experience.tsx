@@ -5,7 +5,7 @@ function Experience() {
 	return (
 		<div
 			id="experiencia"
-			className="scroll-mt-[12vh] flex flex-col-reverse md:flex-row justify-center items-center gap-16 lg:gap-20"
+			className="scroll-mt-[15vh] flex flex-col-reverse md:flex-row justify-center items-center gap-16 lg:gap-20"
 		>
 			<div className="md:w-1/2">
 				<h2 className="text-3xl text-negro md:text-[40px] uppercase tracking-widest mb-4">

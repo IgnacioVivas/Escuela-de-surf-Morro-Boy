@@ -2,7 +2,7 @@ import MyCalendar from '../miUi/MyCalendar';
 
 function Booking() {
 	return (
-		<div id="agendar" className="scroll-mt-[12vh] flex flex-col lg:flex-row items-start gap-16 lg:gap-20">
+		<div id="agendar" className="scroll-mt-[15vh] flex flex-col lg:flex-row items-start gap-16 lg:gap-20">
 			<div className="w-full lg:w-1/2 flex flex-col items-start gap-4 order-1 lg:order-1">
 				<h2 className="text-3xl text-negro md:text-[40px] uppercase tracking-[.08em]">Agende sua aula de surf</h2>
 

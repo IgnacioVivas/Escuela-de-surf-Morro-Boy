@@ -1,9 +1,11 @@
 import { Facebook, Instagram, MapPin, Send, Smartphone } from 'lucide-react';
+import LanguageSwitcher from './LanguageSwitcher';
+import { useTranslation } from 'react-i18next';
 
 const SocialBar = () => {
+	const { t } = useTranslation();
 	const phone = '5512996049078';
 	const message = 'Olá! Quero começar as aulas de surf. Pode me passar mais informações?';
-
 	const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
 	return (
@@ -39,8 +41,11 @@ const SocialBar = () => {
 					className="flex items-center justify-center gap-1 hover:text-celeste cursor-pointer"
 				>
 					<MapPin size={14} />
-					<p>184 Ubatuba Itamambuca 2577</p>
+					<p>{t('location')}</p>
 				</a>
+
+				{/* BUTTON CAMBIAR LENGUAJE - SOLO DESKTOP */}
+				<LanguageSwitcher />
 			</div>
 		</div>
 	);

@@ -9,6 +9,7 @@ import { cn } from '@/lib/utils';
 import MenuDesktop from './MenuDesktop';
 import { useState } from 'react';
 import MenuMobile from './MenuMobile';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const Navigation = () => {
 	const sections = ['paraiso', 'agendar', 'niveis', 'locais', 'experiencia', 'familias'];
@@ -39,6 +40,11 @@ const Navigation = () => {
 						RESERVE HOJE
 					</a>
 				</ButtonUno>
+			</div>
+
+			{/* BUTTON CAMBIAR LENGUAJE - SOLO MOBILE */}
+			<div className="block lg:hidden">
+				<LanguageSwitcher />
 			</div>
 
 			<div className="absolute left-1/2 -translate-x-1/2 flex items-center gap-8">
