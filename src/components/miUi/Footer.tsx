@@ -1,7 +1,9 @@
 import { Facebook, Instagram, MapPin, Send, Smartphone, Waves } from 'lucide-react';
 import surfer from '@/assets/surfer.png';
+import { useTranslation } from 'react-i18next';
 
 function Footer() {
+	const { t } = useTranslation();
 	const phone = '5512996049078';
 	const message = 'Olá! Quero começar as aulas de surf. Pode me passar mais informações?';
 
@@ -65,7 +67,7 @@ function Footer() {
 							className="flex items-center justify-center gap-1 hover:text-celeste cursor-pointer"
 						>
 							<MapPin color="white" size={14} />
-							<p>Praia do Itamambuca, Ubatuba - SP</p>
+							<p>{t('location')}</p>
 						</a>
 					</div>
 				</div>

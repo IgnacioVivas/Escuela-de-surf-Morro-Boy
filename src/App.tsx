@@ -13,6 +13,7 @@ import Paradise from './components/sections/Paradise';
 import Reasons from './components/sections/Reasons';
 import Servicios from './components/sections/Services';
 import { usePageLoad } from './hooks/usePageLoad';
+import './i18n';
 
 function App() {
 	const isLoading = usePageLoad();

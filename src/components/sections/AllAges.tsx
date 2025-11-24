@@ -8,7 +8,7 @@ function AllAges() {
 	const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
 	return (
-		<div id="familias" className="scroll-mt-[12vh] flex flex-col md:flex-row items-center gap-16">
+		<div id="familias" className="scroll-mt-[15vh] flex flex-col md:flex-row items-center gap-16">
 			<div className="relative w-full lg:w-1/2 flex justify-center">
 				<img src={imgCollage} alt="collage de fotos" />
 			</div>

@@ -2,6 +2,7 @@ import uno from '@/assets/h1-img-33.png';
 import dos from '@/assets/h1-img-34.png';
 import tres from '@/assets/h1-img-35.png';
 import cuatro from '@/assets/h1-img-36.png';
+// import { useTranslation } from 'react-i18next';
 
 const info = [
 	{
@@ -27,6 +28,8 @@ const info = [
 ];
 
 function Levels() {
+	// const { t } = useTranslation();
+
 	return (
 		<div id="niveis" className="scroll-mt-[15vh] flex flex-col justify-center items-center gap-4">
 			<h2 className="text-3xl text-center text-negro md:text-[40px] uppercase tracking-[.08em]">
