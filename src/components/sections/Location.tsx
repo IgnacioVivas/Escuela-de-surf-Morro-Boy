@@ -20,6 +20,7 @@ function Location() {
 					<span>Vermelha do Norte</span>
 					<span>Pereque-Acu</span>
 					<span>Prai Grande</span>
+					<span>Fazenda</span>
 				</div>
 			</div>
 		</div>

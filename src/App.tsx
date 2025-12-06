@@ -12,6 +12,7 @@ import Location from './components/sections/Location';
 import Paradise from './components/sections/Paradise';
 import Reasons from './components/sections/Reasons';
 import Servicios from './components/sections/Services';
+import Tour from './components/sections/Tour';
 import { usePageLoad } from './hooks/usePageLoad';
 import './i18n';
 
@@ -32,6 +33,11 @@ function App() {
 				<Booking />
 				<Levels />
 				<Location />
+			</div>
+			<div className="pt-30">
+				<Tour />
+			</div>
+			<div className="px-15 pt-30 md:px-10 xl:px-32 flex flex-col gap-[105px]">
 				<Experience />
 			</div>
 
