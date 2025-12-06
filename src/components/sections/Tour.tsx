@@ -14,11 +14,11 @@ function Tour() {
 	return (
 		<div className="relative flex justify-center items-center">
 			{/* Mobile */}
-			<img className="lg:hidden brightness-50 object-cover" src={bannerMobile} alt="playa" />
+			<img className="md:hidden brightness-50 object-cover" src={bannerMobile} alt="playa" />
 
 			{/* Desktop con PARALLAX */}
 			<div
-				className="hidden lg:block brightness-50 bg-fixed bg-center bg-cover h-[500px] w-full"
+				className="hidden md:block brightness-50 bg-fixed bg-center bg-cover h-[500px] w-full"
 				style={{ backgroundImage: `url(${bannerDesktop})` }}
 			></div>
 
