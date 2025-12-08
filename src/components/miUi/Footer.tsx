@@ -61,7 +61,7 @@ function Footer() {
 							className="flex items-center justify-center gap-1 hover:text-celeste cursor-pointer"
 						>
 							<MapPin color="white" size={14} />
-							<p>{t('location')}</p>
+							<p>{t('social.location')}</p>
 						</a>
 					</div>
 				</div>
