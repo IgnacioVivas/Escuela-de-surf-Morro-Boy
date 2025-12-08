@@ -6,6 +6,7 @@ import ButtonUno from './ButtonUno';
 import { useActiveSection } from '@/hooks/useActiveSection';
 import { cn } from '@/lib/utils';
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface MenuMobileProps {
 	isOpen: boolean;
@@ -13,6 +14,7 @@ interface MenuMobileProps {
 }
 
 const MenuMobile = ({ isOpen, onClose }: MenuMobileProps) => {
+	const { t } = useTranslation();
 	const sections = ['paraiso', 'agendar', 'niveis', 'locais', 'experiencia', 'familias'];
 	const active = useActiveSection(sections);
 
@@ -66,16 +68,15 @@ const MenuMobile = ({ isOpen, onClose }: MenuMobileProps) => {
 					</div>
 				</div>
 
-				{/* Contenido del menú con animación escalonada */}
 				<div className="px-5 py-8 bg-white max-h-[88vh] overflow-y-auto">
 					<nav className="flex flex-col space-y-2">
 						{[
-							{ id: 'paraiso', emoji: '🏄‍♂️', label: 'Paraíso' },
-							{ id: 'agendar', emoji: '📅', label: 'Agendar' },
-							{ id: 'niveis', emoji: '⭐', label: 'Níveis' },
-							{ id: 'locais', emoji: '📍', label: 'Locais' },
-							{ id: 'experiencia', emoji: '🌊', label: 'Experiência' },
-							{ id: 'familias', emoji: '👨‍👩‍👧‍👦', label: 'Famílias' },
+							{ id: 'paraiso', emoji: '🏄‍♂️', label: t('menu.paradise') },
+							{ id: 'agendar', emoji: '📅', label: t('menu.booking') },
+							{ id: 'niveis', emoji: '⭐', label: t('menu.levels') },
+							{ id: 'locais', emoji: '📍', label: t('menu.spots') },
+							{ id: 'experiencia', emoji: '🌊', label: t('menu.experience') },
+							{ id: 'familias', emoji: '👨‍👩‍👧‍👦', label: t('menu.families') },
 						].map((item, index) => (
 							<a
 								key={item.id}
@@ -110,7 +111,7 @@ const MenuMobile = ({ isOpen, onClose }: MenuMobileProps) => {
 					>
 						<ButtonUno className="w-full justify-center py-4 text-lg">
 							<a href={url} target="_blank" onClick={onClose}>
-								RESERVE HOJE
+								{t('menuMobile.reserveButton')}
 							</a>
 						</ButtonUno>
 					</div>

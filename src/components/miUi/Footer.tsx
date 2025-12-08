@@ -1,4 +1,4 @@
-import { Facebook, Instagram, MapPin, Send, Smartphone, Waves } from 'lucide-react';
+import { Facebook, Instagram, MapPin, Smartphone, Waves } from 'lucide-react';
 import surfer from '@/assets/surfer.png';
 import { useTranslation } from 'react-i18next';
 
@@ -14,17 +14,14 @@ function Footer() {
 			<div className="px-10 xl:px-30 py-28 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10">
 				<div className="flex flex-col gap-4">
 					<h1 className="text-white text-3xl font-dafoe tracking-widest font-bold uppercase">
-						Escola de surf Morro Boy
+						{t('footer.about_title')}
 					</h1>
-					<span className="text-[17px] text-[#adadad]">
-						O lugar onde a paixão pelo surf encontra o espírito de Itamambuca. A Morro Boy oferece aulas seguras,
-						personalizadas e cheias de energia — para que você viva a verdadeira essência do surf em Ubatuba.
-					</span>
+					<span className="text-[17px] text-[#adadad]">{t('footer.about_text')}</span>
 				</div>
 
 				<div className="flex flex-col gap-4 md:col-start-1 md:row-start-2 xl:col-start-2 xl:row-start-1">
 					<h3 className="text-white text-lg tracking-widest font-semibold uppercase flex items-center gap-2">
-						<Waves className="text-celeste" /> Redes sociais
+						<Waves className="text-celeste" /> {t('footer.social_title')}
 					</h3>
 					<div className="flex gap-2">
 						<a
@@ -46,7 +43,7 @@ function Footer() {
 
 				<div className="flex flex-col gap-4">
 					<h3 className="text-white text-lg tracking-widest font-semibold uppercase flex items-center gap-2">
-						<Waves className="text-celeste" /> Entre em contato
+						<Waves className="text-celeste" /> {t('footer.contact_title')}
 					</h3>
 					<div className="flex flex-col items-start gap-2 font-source text-[#adadad] text-base">
 						<a
@@ -57,10 +54,7 @@ function Footer() {
 							<Smartphone color="white" size={14} />
 							<p>+55 12 996049078</p>
 						</a>
-						<a target="_blank" className="flex items-center justify-center gap-1 hover:text-celeste cursor-pointer">
-							<Send color="white" size={14} />
-							<p>prueba@escuelasurf.com.br</p>
-						</a>
+
 						<a
 							href="https://maps.app.goo.gl/MHGEskEDKTHYR6GBA"
 							target="_blank"
@@ -77,20 +71,27 @@ function Footer() {
 				</div>
 			</div>
 
-			<div className="w-full flex items-center justify-center py-4 px-2 bg-black">
+			<div className="w-full flex flex-col items-center justify-center py-4 px-2 bg-black">
 				<a
 					href="https://www.linkedin.com/in/ignacio-vivas-viscarra/"
 					target="_blank"
 					className="sm:hidden text-gris-secundario text-xs text-center hover:text-celeste"
 				>
-					Feito com 🌊 e ☀️ em Itamambuca <br /> Desenvolvido por Ignacio Vivas
+					{t('footer.made_by_mobile1')}
+				</a>
+				<a
+					href="https://www.linkedin.com/in/ignacio-vivas-viscarra/"
+					target="_blank"
+					className="sm:hidden text-gris-secundario text-xs text-center hover:text-celeste"
+				>
+					{t('footer.made_by_mobile2')}
 				</a>
 				<a
 					href="https://www.linkedin.com/in/ignacio-vivas-viscarra/"
 					target="_blank"
 					className="hidden sm:block text-gris-secundario text-xs text-center hover:text-celeste"
 				>
-					Feito com 🌊 e ☀️ em Itamambuca — Desenvolvido por Ignacio Vivas
+					{t('footer.made_by')}
 				</a>
 			</div>
 		</div>

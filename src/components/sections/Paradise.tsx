@@ -14,15 +14,17 @@ function Paradise() {
 				<img src={paradise} alt="" />
 			</div>
 			<div>
-				<h2 className="text-3xl text-negro md:text-[40px] uppercase tracking-[.08em] mb-1">{t('titleParadise')}</h2>
+				<h2 className="text-3xl text-negro md:text-[40px] uppercase tracking-[.08em] mb-1">
+					{t('paradise.titleParadise')}
+				</h2>
 				<a
 					className="flex items-center gap-1 text-naranja mb-4 hover:text-amarillo"
 					href="https://maps.app.goo.gl/MHGEskEDKTHYR6GBA"
 					target="_blank"
 				>
-					<MapPin size={14} /> <span className="text-sm">{t('location')}</span>
+					<MapPin size={14} /> <span className="text-sm">{t('paradise.location')}</span>
 				</a>
-				<p className="text-[19px] text-gris leading-relaxed">{t('textParadise')}</p>
+				<p className="text-[19px] text-gris leading-relaxed">{t('paradise.textParadise')}</p>
 			</div>
 		</div>
 	);

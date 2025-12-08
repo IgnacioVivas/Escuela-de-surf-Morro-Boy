@@ -3,8 +3,10 @@
 import { Sun } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { cn } from '@/lib/utils';
+import { useTranslation } from 'react-i18next';
 
 function BackToTop() {
+	const { t } = useTranslation();
 	const [show, setShow] = useState(false);
 
 	useEffect(() => {
@@ -37,7 +39,7 @@ function BackToTop() {
 				show ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none',
 			)}
 		>
-			Voltar ao topo
+			{t('backToTop.text')}
 			<Sun size={16} />
 		</button>
 	);

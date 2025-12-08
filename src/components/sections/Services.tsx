@@ -3,20 +3,23 @@ import clases from '../../assets/clases-particulares.jpg';
 import alquiler from '../../assets/alugel.jpg';
 import fotos from '../../assets/fotos y videos.jpg';
 import yoga from '../../assets/supyoga1.jpg';
-
-const cards = [
-	{ img: clases, title: 'Aulas personalizadas de surf', price: '', extra: '' },
-	{ img: alquiler, title: 'Aluguel de pranchas de surf', price: '', extra: '(Por hora ou por diária)' },
-	{
-		img: fotos,
-		title: 'Fotos e vídeos',
-		price: '',
-		extra: '(Consulta por vídeo análise para maximizar a sua evolução)',
-	},
-	{ img: yoga, title: 'Aulas de SupYoga', price: '+ Info', extra: '(2HS.)' },
-];
+import { useTranslation } from 'react-i18next';
 
 function Services() {
+	const { t } = useTranslation();
+
+	const cards = [
+		{ img: clases, title: t('services.lessons_title'), price: '', extra: '' },
+		{ img: alquiler, title: t('services.rental_title'), price: '', extra: t('services.rental_extra') },
+		{
+			img: fotos,
+			title: t('services.photos_title'),
+			price: '',
+			extra: t('services.photos_extra'),
+		},
+		{ img: yoga, title: t('services.yoga_title'), price: '+ Info', extra: t('services.yoga_extra') },
+	];
+
 	return (
 		<div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
 			{cards.map((card, index) => (

@@ -10,8 +10,11 @@ import MenuDesktop from './MenuDesktop';
 import { useState } from 'react';
 import MenuMobile from './MenuMobile';
 import LanguageSwitcher from './LanguageSwitcher';
+import { useTranslation } from 'react-i18next';
 
 const Navigation = () => {
+	const { t } = useTranslation();
+
 	const sections = ['paraiso', 'agendar', 'niveis', 'locais', 'experiencia', 'familias'];
 	const active = useActiveSection(sections);
 
@@ -37,7 +40,7 @@ const Navigation = () => {
 			<div className="hidden lg:block">
 				<ButtonUno>
 					<a href={url} target="_blank">
-						RESERVE HOJE
+						{t('menu.reserve_today')}
 					</a>
 				</ButtonUno>
 			</div>
@@ -56,7 +59,7 @@ const Navigation = () => {
 							active === 'paraiso' && 'text-celeste-secundario',
 						)}
 					>
-						Paraíso
+						{t('menu.paradise')}
 					</a>
 
 					<a
@@ -66,7 +69,7 @@ const Navigation = () => {
 							active === 'agendar' && 'text-celeste-secundario',
 						)}
 					>
-						Agendar
+						{t('menu.booking')}
 					</a>
 
 					<a
@@ -76,7 +79,7 @@ const Navigation = () => {
 							active === 'niveis' && 'text-celeste-secundario',
 						)}
 					>
-						Níveis
+						{t('menu.levels')}
 					</a>
 				</nav>
 
@@ -90,7 +93,7 @@ const Navigation = () => {
 							active === 'locais' && 'text-celeste-secundario',
 						)}
 					>
-						Locais
+						{t('menu.spots')}
 					</a>
 
 					<a
@@ -100,7 +103,7 @@ const Navigation = () => {
 							active === 'experiencia' && 'text-celeste-secundario',
 						)}
 					>
-						Experiência
+						{t('menu.experience')}
 					</a>
 
 					<a
@@ -110,7 +113,7 @@ const Navigation = () => {
 							active === 'familias' && 'text-celeste-secundario',
 						)}
 					>
-						Famílias
+						{t('menu.families')}
 					</a>
 				</nav>
 			</div>
