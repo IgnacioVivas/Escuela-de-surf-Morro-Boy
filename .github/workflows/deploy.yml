@@ -1,4 +1,4 @@
-name: Deploy Vite React via FTPS (Locaweb)
+name: Deploy Vite React via FTP (Locaweb)
 
 on:
   push:
@@ -13,7 +13,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
@@ -24,13 +24,13 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Deploy to Locaweb (FTPS)
+      - name: Deploy to Locaweb (FTP)
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
           password: ${{ secrets.PASS }}
-          protocol: ftps
+          protocol: ftp
           port: 21
           local-dir: dist/
           server-dir: public_html/
