@@ -24,7 +24,7 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Deploy to Locaweb (FTP)
+      - name: Deploy to Locaweb (FTP PASV)
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.HOST }}
@@ -34,3 +34,4 @@ jobs:
           port: 21
           local-dir: dist/
           server-dir: public_html/
+          passive: true
