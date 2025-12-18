@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://morroboysurf.netlify.app/sitemap.xml
+Sitemap: https://morroboysurfschool.com.br/sitemap.xml
